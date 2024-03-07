@@ -11,6 +11,33 @@ jobs:
           - 1
           - 2
           - 3
+          - 4
+          - 5
+          - 6
+          - 7
+          - 8
+          - 9
+          - 10
+          - 11
+          - 12
+          - 13
+          - 14
+          - 15
+          - 16
+          - 17
+          - 18
+          - 19
+          - 20
+          - 21
+          - 22
+          - 23
+          - 24
+          - 25
+          - 26
+          - 27
+          - 28
+          - 29
+          - 30
     steps:
       - uses: actions/checkout@v3
       - name: Install Node.js
@@ -27,9 +54,3 @@ jobs:
       - name: Run API tests
         run: |
           postman collection run "16208887-76229f95-e6f9-41d6-b922-20411b94ca51" --iteration-count 3
-      # Run collection with newman
-      - name: Run Postman Tests with Delay
-        run: |
-            newman run collection/Integration_testing.json --iteration-count 3 --delay-request 1000
-      # Run newman with collection json and delay
-      # newman run /collection/collection1.json --delay-request 1000
